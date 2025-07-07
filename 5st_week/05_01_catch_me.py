@@ -67,7 +67,7 @@ def catch_me(cony_loc, brown_loc):
                 visited[new_position][new_time] = True  ## 현재 new_position이 위치한 곳에 new_time 이라는 키 값에 true를 대입
                 queue.append((new_position, new_time))  # brown_loc * 1, 1
 
-        # 중복 제거 방법
+        # 2. 중복 제거 방법
         # for _ in range(len(queue)):
         #     current_position, current_time = queue.popleft()
         #     new_time = current_time + 1
